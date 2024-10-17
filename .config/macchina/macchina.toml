@@ -1,0 +1,5 @@
+theme = "default"
+show = ["Distribution", "Packages", "Shell", "Uptime", "ProcessorLoad", "Memory", "DiskSpace"]
+
+long_uptime = true
+
