@@ -1,6 +1,13 @@
 [user]
-	email = 50950966+orangebae@users.noreply.github.com
-	name = orangebae
-	signingkey = 16CBC7ACA1E7DA6B
+  email = 50950966+orangebae@users.noreply.github.com
+  name = bae
+  signingkey = 16CBC7ACA1E7DA6B
+
 [commit]
-	gpgsign = true
+  gpgsign = true
+
+[alias]
+  c = commit
+
+[log]
+  showSignature = true

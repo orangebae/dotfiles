@@ -1,6 +1,10 @@
 if status is-interactive
+  if not set -q TMUX
+    exec tmux
+  end
+
   macchina
-    # Commands to run in interactive sessions can go here
+  # Commands to run in interactive sessions can go here
 end
 
 set -g fish_greeting 'Hey, bae!'
@@ -15,3 +19,8 @@ abbr -a t --function projectdo_test
 abbr -a p --function projectdo_tool
 
 set -x GPG_TTY (tty)
+
+function sa 
+  eval (ssh-agent -c) 
+  ssh-add
+end
